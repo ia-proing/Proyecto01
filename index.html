@@ -1,0 +1,889 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Claudio Castillo Ordenes | Ingeniería e Inteligencia Artificial Aplicada</title>
+  
+  <!-- SEO y Metadatos -->
+  <meta name="description" content="Sitio web oficial de Claudio Castillo Ordenes. Más de 18 años de trayectoria en ingeniería eléctrica, gestión de proyectos industriales (CAPEX, PMBOK, SEC Clase A) y soluciones prácticas de Inteligencia Artificial aplicada y productividad.">
+  <meta name="author" content="Claudio Castillo Ordenes">
+  <meta name="keywords" content="Claudio Castillo Ordenes, Ingeniero Electricista, Inteligencia Artificial Aplicada, PMBOK, Licencia SEC Clase A, Minería, Albemarle, CAPEX, Automatización de Procesos, Vibe Coding, Antofagasta, Chile, IAProing">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#0B1220">
+
+  <!-- Open Graph / LinkedIn / Facebook -->
+  <meta property="og:type" content="profile">
+  <meta property="og:title" content="Claudio Castillo Ordenes | Ingeniería e Inteligencia Artificial Aplicada">
+  <meta property="og:description" content="Experiencia en ingeniería. Innovación con inteligencia artificial. Más de 18 años de experiencia en proyectos industriales combinados con IA generativa y optimización de productividad.">
+  <meta property="og:url" content="https://cl.linkedin.com/in/claudio-castillo-pmp">
+  <meta property="og:image" content="assets/images/claudio-castillo.jpg">
+
+  <!-- Google Fonts: Manrope (Headings) e Inter (Body) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Manrope:wght@600;700;800;900&display=swap" rel="stylesheet">
+
+  <!-- Tailwind CSS CDN para maquetación ágil -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              dark: '#0B1220',
+              surface: '#16243A',
+              elevated: '#1C2D47',
+              cyan: '#35C6BC',
+              cyanHover: '#47DDD3',
+              text: '#F5F7FB',
+              muted: '#94A3B8'
+            }
+          },
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+            heading: ['Manrope', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Hoja de Estilos Personalizada Dark Premium -->
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="bg-[#0B1220] text-[#94A3B8] font-sans antialiased selection:bg-[#35C6BC]/30 selection:text-[#35C6BC]">
+
+  <!-- Fondo Ambiental con Iluminación Radial Sutil -->
+  <div class="bg-ambient-layer" aria-hidden="true"></div>
+
+  <div class="content-wrapper flex flex-col min-h-screen">
+
+    <!-- ====================================================================
+         1. HEADER MINIMALISTA
+         ==================================================================== -->
+    <header class="site-header">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+        
+        <!-- Identidad -->
+        <a href="#" class="flex items-center gap-3 group" aria-label="Ir al inicio de la página">
+          <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-[#16243A] to-[#0B1220] border border-white/10 flex items-center justify-center font-heading font-black text-[#35C6BC] text-lg shadow-inner group-hover:border-[#35C6BC]/50 transition-colors">
+            CCO
+          </div>
+          <div>
+            <span class="block text-[#F5F7FB] font-heading font-bold text-base tracking-tight leading-none group-hover:text-[#35C6BC] transition-colors">
+              Claudio Castillo Ordenes
+            </span>
+            <span class="text-xs text-[#94A3B8] font-medium tracking-wide">
+              Ingeniería &amp; Inteligencia Artificial
+            </span>
+          </div>
+        </a>
+
+        <!-- Indicador de Disponibilidad y Enlaces Rápidos -->
+        <div class="flex items-center gap-4 sm:gap-6">
+          <div class="hidden md:flex items-center gap-2 px-3 py-1.5 rounded-full bg-[#16243A]/70 border border-white/5 text-xs font-medium text-[#F5F7FB]">
+            <span class="pulse-dot"></span>
+            <span>Disponible para consultoría y proyectos</span>
+          </div>
+
+          <!-- Acceso Directo LinkedIn -->
+          <a href="https://cl.linkedin.com/in/claudio-castillo-pmp" target="_blank" rel="noopener noreferrer" class="p-2 text-[#94A3B8] hover:text-[#35C6BC] transition-colors" aria-label="Perfil de LinkedIn de Claudio Castillo">
+            <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24">
+              <path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 8.76a1.62 1.62 0 1 0 0-3.24 1.62 1.62 0 0 0 0 3.24m1.39 9.74v-8.37H5.07v8.37h2.78Z"/>
+            </svg>
+          </a>
+
+          <!-- CTA de Conversación -->
+          <a href="#contacto" class="hidden sm:inline-flex items-center justify-center px-4 py-2 rounded-full text-xs font-heading font-bold text-[#F5F7FB] bg-white/5 border border-white/10 hover:border-[#35C6BC]/50 hover:bg-[#35C6BC]/10 transition-all">
+            Conversemos
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <!-- ====================================================================
+         2. HERO SECTION — IMPACTO VISUAL Y POSICIONAMIENTO HÍBRIDO
+         ==================================================================== -->
+    <section class="relative pt-12 pb-20 lg:pt-20 lg:pb-32 overflow-hidden">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
+          
+          <!-- Contenido Textual Hero -->
+          <div class="lg:col-span-7 flex flex-col items-start text-left">
+            
+            <!-- Badge de Especialidad y Enfoque -->
+            <div class="reveal-on-scroll tech-badge mb-6">
+              <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+              </svg>
+              <span>Ingeniería Eléctrica &amp; Inteligencia Artificial Aplicada</span>
+            </div>
+
+            <!-- Titular Principal -->
+            <h1 class="reveal-on-scroll delay-100 text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-[#F5F7FB] mb-4">
+              Claudio Castillo Ordenes
+            </h1>
+
+            <!-- Subtítulo Profesional -->
+            <p class="reveal-on-scroll delay-100 text-lg sm:text-xl font-medium text-[#35C6BC] mb-6">
+              Ingeniero Electricista | Dirección de Proyectos Industriales | Automatización con IA
+            </p>
+
+            <!-- Claim Central -->
+            <div class="reveal-on-scroll delay-200 pl-4 border-l-2 border-[#35C6BC] my-2">
+              <p class="text-xl sm:text-2xl font-heading font-semibold text-[#F5F7FB] italic">
+                “Experiencia en ingeniería. Innovación con inteligencia artificial.”
+              </p>
+            </div>
+
+            <!-- Propuesta de Valor -->
+            <p class="reveal-on-scroll delay-200 text-base sm:text-lg text-[#94A3B8] leading-relaxed my-6 max-w-2xl">
+              Combino más de 18 años de trayectoria en proyectos eléctricos, supervisión en minería y gestión CAPEX, con soluciones prácticas de inteligencia artificial generativa para optimizar procesos técnicos, elevar la productividad y acelerar resultados medibles.
+            </p>
+
+            <!-- Badges Fácticos de Confianza -->
+            <div class="reveal-on-scroll delay-300 flex flex-wrap gap-2.5 mb-8">
+              <span class="px-3 py-1.5 rounded-lg bg-[#16243A] border border-white/5 text-xs text-[#F5F7FB] font-medium flex items-center gap-1.5">
+                <span class="w-1.5 h-1.5 rounded-full bg-[#35C6BC]"></span>+18 Años de Trayectoria
+              </span>
+              <span class="px-3 py-1.5 rounded-lg bg-[#16243A] border border-white/5 text-xs text-[#F5F7FB] font-medium flex items-center gap-1.5">
+                <span class="w-1.5 h-1.5 rounded-full bg-[#35C6BC]"></span>Licencia SEC Clase A
+              </span>
+              <span class="px-3 py-1.5 rounded-lg bg-[#16243A] border border-white/5 text-xs text-[#F5F7FB] font-medium flex items-center gap-1.5">
+                <span class="w-1.5 h-1.5 rounded-full bg-[#35C6BC]"></span>Gestión de Proyectos PMBOK
+              </span>
+              <span class="px-3 py-1.5 rounded-lg bg-[#16243A] border border-white/5 text-xs text-[#F5F7FB] font-medium flex items-center gap-1.5">
+                <span class="w-1.5 h-1.5 rounded-full bg-[#35C6BC]"></span>IA Generativa &amp; Vibe Coding
+              </span>
+              <span class="px-3 py-1.5 rounded-lg bg-[#16243A] border border-[#35C6BC]/30 text-xs text-[#35C6BC] font-medium flex items-center gap-1.5 shadow-sm">
+                <span class="w-1.5 h-1.5 rounded-full bg-[#35C6BC]"></span>Socio Activo CCHIA
+              </span>
+            </div>
+
+            <!-- Botones de Acción (CTAs) -->
+            <div class="reveal-on-scroll delay-400 flex flex-col sm:flex-row items-stretch sm:items-center gap-4 w-full sm:w-auto">
+              <a href="https://wa.me/56987642331?text=Hola%20Claudio,%20visit%C3%A9%20tu%20sitio%20web%20y%20me%20gustar%C3%ADa%20conversar%20contigo%20sobre%20una%20oportunidad%20profesional%20o%20proyecto." target="_blank" rel="noopener noreferrer" class="btn-primary">
+                <svg class="w-5 h-5 fill-current" viewBox="0 0 448 512">
+                  <path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"/>
+                </svg>
+                <span>Contactar por WhatsApp</span>
+              </a>
+
+              <a href="https://cl.linkedin.com/in/claudio-castillo-pmp" target="_blank" rel="noopener noreferrer" class="btn-secondary">
+                <svg class="w-5 h-5 fill-current text-[#35C6BC]" viewBox="0 0 24 24">
+                  <path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 8.76a1.62 1.62 0 1 0 0-3.24 1.62 1.62 0 0 0 0 3.24m1.39 9.74v-8.37H5.07v8.37h2.78Z"/>
+                </svg>
+                <span>Ver Perfil en LinkedIn</span>
+              </a>
+            </div>
+
+          </div>
+
+          <!-- Presentación Visual / Retrato Profesional -->
+          <div class="lg:col-span-5 flex justify-center lg:justify-end">
+            <div class="reveal-on-scroll delay-200 relative w-full max-w-sm sm:max-w-md">
+              
+              <!-- Resplandor tecnológico posterior -->
+              <div class="absolute -inset-1.5 bg-gradient-to-tr from-[#35C6BC]/20 to-[#16243A] rounded-3xl blur-xl opacity-60"></div>
+              
+              <!-- Marco de cristal Dark Premium -->
+              <div class="relative glass-panel p-3 border border-white/10 shadow-2xl overflow-hidden rounded-3xl">
+                <div class="aspect-[4/5] rounded-2xl overflow-hidden bg-[#0B1220] relative">
+                  
+                  <!-- Imagen / Placeholder con fallback robusto -->
+                  <img 
+                    src="assets/images/claudio-castillo.jpg" 
+                    alt="Claudio Castillo Ordenes — Ingeniero Electricista y Especialista en IA Aplicada" 
+                    class="w-full h-full object-cover object-top"
+                    onerror="this.onerror=null; this.src='assets/images/claudio-castillo-placeholder.svg';"
+                  >
+
+                  <!-- Tarjeta flotante superpuesta: Licencia SEC Clase A -->
+                  <div class="absolute bottom-4 left-4 right-4 p-3 rounded-xl bg-[#0B1220]/90 backdrop-blur-md border border-white/10 flex items-center gap-3">
+                    <img src="assets/images/sec-clase-a.svg" alt="Sello SEC Clase A" class="w-10 h-10 flex-shrink-0">
+                    <div class="overflow-hidden">
+                      <div class="text-xs font-heading font-bold text-[#F5F7FB] truncate">Licencia SEC Clase A</div>
+                      <div class="text-[10px] text-[#35C6BC] font-medium tracking-wide">Alta, Media y Baja Tensión · Chile</div>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         3. SOBRE MÍ — NARRATIVA PROFESIONAL CONECTIVA
+         ==================================================================== -->
+    <section class="py-20 bg-[#0B1220]/50 border-t border-b border-white/5">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="max-w-3xl mx-auto text-center mb-16">
+          <div class="reveal-on-scroll tech-badge mb-3">
+            <span>Trayectoria &amp; Visión</span>
+          </div>
+          <h2 class="reveal-on-scroll delay-100 text-3xl sm:text-4xl font-extrabold text-[#F5F7FB]">
+            De la rigurosidad industrial a la innovación con IA
+          </h2>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch">
+          
+          <!-- Texto Narrativo Principal -->
+          <div class="lg:col-span-8 glass-panel p-8 sm:p-10 flex flex-col justify-between">
+            <div class="space-y-5 text-base sm:text-lg leading-relaxed text-[#94A3B8]">
+              <p>
+                Mi carrera profesional inició en febrero de 2008 en Antofagasta, consolidando más de 18 años de experiencia directa en sectores industriales de alta exigencia como la minería del cobre, faenas de litio en el Salar de Atacama, plantas de fundición metalúrgica e infraestructura eléctrica.
+              </p>
+              <p>
+                A lo largo de este camino, me he desempeñado en múltiples etapas del ciclo de vida de los proyectos: desde la ingeniería conceptual y básica, pasando por la revisión crítica de memorias y especificaciones bajo normativa Pliegos RIC, hasta la supervisión en terreno (ITO), licitaciones y administración de carteras CAPEX de envergadura.
+              </p>
+              <p class="text-[#F5F7FB] font-medium">
+                Hoy combino esa base de disciplina y gestión con el poder transformador de la inteligencia artificial generativa. No desde una perspectiva teórica, sino desarrollando soluciones prácticas: automatización de tareas y documentos técnicos, flujos con agentes y asistentes de IA, optimización de productividad y desarrollo ágil mediante <span class="text-[#35C6BC]">vibe coding</span>.
+              </p>
+            </div>
+
+            <!-- Cita destacada -->
+            <div class="mt-8 pt-6 border-t border-white/5 flex items-center justify-between flex-wrap gap-4">
+              <div class="flex items-center gap-3">
+                <div class="w-10 h-10 rounded-full bg-[#35C6BC]/10 border border-[#35C6BC]/30 flex items-center justify-center text-[#35C6BC]">
+                  <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                  </svg>
+                </div>
+                <div>
+                  <div class="text-sm font-heading font-bold text-[#F5F7FB]">Criterio de ingeniería comprobado</div>
+                  <div class="text-xs text-[#94A3B8]">Validación técnica y rigor antes de cada implementación</div>
+                </div>
+              </div>
+              <span class="text-xs text-[#35C6BC] font-semibold tracking-wider uppercase">Antofagasta, Chile</span>
+            </div>
+          </div>
+
+          <!-- Métrica e Indicadores Clave en Cards Laterales -->
+          <div class="lg:col-span-4 flex flex-col gap-4">
+            
+            <div class="glass-panel p-6 card-hover">
+              <div class="text-3xl sm:text-4xl font-extrabold text-[#35C6BC] font-heading mb-1">+18 Años</div>
+              <div class="text-sm font-bold text-[#F5F7FB] mb-1">Trayectoria Continua</div>
+              <div class="text-xs text-[#94A3B8]">Iniciada en febrero de 2008, con participación en ingeniería, construcción, supervisión y gestión.</div>
+            </div>
+
+            <div class="glass-panel p-6 card-hover">
+              <div class="text-3xl sm:text-4xl font-extrabold text-[#F5F7FB] font-heading mb-1">95% / 90%</div>
+              <div class="text-sm font-bold text-[#F5F7FB] mb-1">Efectividad en Proyectos CAPEX</div>
+              <div class="text-xs text-[#94A3B8]">Proyectos completados dentro de presupuesto (95%) y dentro de plazo (90%) en Altonorte.</div>
+            </div>
+
+            <div class="glass-panel p-6 card-hover border-[#35C6BC]/30 bg-gradient-to-br from-[#16243A] to-[#0B1220]">
+              <div class="flex items-center justify-between mb-2">
+                <span class="text-xs font-bold text-[#35C6BC] uppercase tracking-wider">Certificación SEC</span>
+                <span class="px-2 py-0.5 rounded text-[10px] font-bold bg-[#35C6BC]/20 text-[#35C6BC]">CLASE A</span>
+              </div>
+              <div class="text-sm font-bold text-[#F5F7FB] mb-1">Habilitación Nacional Máxima</div>
+              <div class="text-xs text-[#94A3B8]">Sin límite de potencia en instalaciones de Alta, Media y Baja Tensión en todo el territorio chileno.</div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         4. ÁREAS DE ESPECIALIZACIÓN (DUAL GRID ESTRUCTURADO)
+         ==================================================================== -->
+    <section class="py-24">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="max-w-3xl mx-auto text-center mb-16">
+          <div class="reveal-on-scroll tech-badge mb-3">
+            <span>Competencias Integradas</span>
+          </div>
+          <h2 class="reveal-on-scroll delay-100 text-3xl sm:text-4xl font-extrabold text-[#F5F7FB] mb-4">
+            Áreas de Especialización
+          </h2>
+          <p class="reveal-on-scroll delay-200 text-base sm:text-lg text-[#94A3B8]">
+            Sinergia entre la experiencia probada en ingeniería industrial y el desarrollo práctico en inteligencia artificial.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+          
+          <!-- Columna 1: Ingeniería y Proyectos Industriales -->
+          <div class="glass-panel p-8 sm:p-10 border border-white/10 card-hover">
+            <div class="flex items-center gap-4 mb-8">
+              <div class="w-14 h-14 rounded-2xl bg-[#1C2D47] border border-[#35C6BC]/30 flex items-center justify-center text-[#35C6BC]">
+                <svg class="w-7 h-7" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z" />
+                </svg>
+              </div>
+              <div>
+                <span class="text-xs font-bold text-[#35C6BC] tracking-wider uppercase">Trayectoria Consolidada</span>
+                <h3 class="text-xl sm:text-2xl font-bold text-[#F5F7FB]">Ingeniería y Proyectos Industriales</h3>
+              </div>
+            </div>
+
+            <ul class="space-y-4">
+              <li class="flex items-start gap-3">
+                <span class="mt-1 w-5 h-5 rounded-full bg-[#35C6BC]/10 border border-[#35C6BC]/30 flex items-center justify-center text-[#35C6BC] flex-shrink-0 text-xs">✓</span>
+                <div>
+                  <strong class="text-[#F5F7FB] block text-sm font-semibold">Gestión de Proyectos CAPEX &amp; Metodología PMBOK</strong>
+                  <span class="text-xs text-[#94A3B8]">Dirección de carteras de inversión, control presupuestario, definición de hitos y pases de puerta.</span>
+                </div>
+              </li>
+              <li class="flex items-start gap-3">
+                <span class="mt-1 w-5 h-5 rounded-full bg-[#35C6BC]/10 border border-[#35C6BC]/30 flex items-center justify-center text-[#35C6BC] flex-shrink-0 text-xs">✓</span>
+                <div>
+                  <strong class="text-[#F5F7FB] block text-sm font-semibold">Revisión de Ingeniería &amp; Normativa RIC</strong>
+                  <span class="text-xs text-[#94A3B8]">Revisión técnica de memorias de cálculo, EETT, protecciones y planos bajo normativa Pliegos RIC.</span>
+                </div>
+              </li>
+              <li class="flex items-start gap-3">
+                <span class="mt-1 w-5 h-5 rounded-full bg-[#35C6BC]/10 border border-[#35C6BC]/30 flex items-center justify-center text-[#35C6BC] flex-shrink-0 text-xs">✓</span>
+                <div>
+                  <strong class="text-[#F5F7FB] block text-sm font-semibold">Supervisión e Inspección Técnica (ITO)</strong>
+                  <span class="text-xs text-[#94A3B8]">Construcción y montaje en terreno en faenas mineras de Litio (Albemarle) y Cobre (Centinela, Lomas Bayas).</span>
+                </div>
+              </li>
+              <li class="flex items-start gap-3">
+                <span class="mt-1 w-5 h-5 rounded-full bg-[#35C6BC]/10 border border-[#35C6BC]/30 flex items-center justify-center text-[#35C6BC] flex-shrink-0 text-xs">✓</span>
+                <div>
+                  <strong class="text-[#F5F7FB] block text-sm font-semibold">Licitaciones y Administración de Contratos</strong>
+                  <span class="text-xs text-[#94A3B8]">Elaboración de Bases Técnicas (BBTT), evaluación técnica de propuestas y control contractual.</span>
+                </div>
+              </li>
+              <li class="flex items-start gap-3">
+                <span class="mt-1 w-5 h-5 rounded-full bg-[#35C6BC]/10 border border-[#35C6BC]/30 flex items-center justify-center text-[#35C6BC] flex-shrink-0 text-xs">✓</span>
+                <div>
+                  <strong class="text-[#F5F7FB] block text-sm font-semibold">Ingeniería Eléctrica en BT, MT y Alta Tensión</strong>
+                  <span class="text-xs text-[#94A3B8]">Diseño, validación de celdas, mallas de puesta a tierra y habilitación oficial SEC Clase A.</span>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Columna 2: Inteligencia Artificial Aplicada -->
+          <div class="glass-panel p-8 sm:p-10 border border-[#35C6BC]/30 bg-gradient-to-b from-[#16243A] to-[#0B1220] card-hover">
+            <div class="flex items-center gap-4 mb-8">
+              <div class="w-14 h-14 rounded-2xl bg-[#35C6BC]/10 border border-[#35C6BC]/40 flex items-center justify-center text-[#35C6BC]">
+                <svg class="w-7 h-7" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                </svg>
+              </div>
+              <div>
+                <span class="text-xs font-bold text-[#35C6BC] tracking-wider uppercase">Innovación Práctica</span>
+                <h3 class="text-xl sm:text-2xl font-bold text-[#F5F7FB]">Inteligencia Artificial Aplicada</h3>
+              </div>
+            </div>
+
+            <ul class="space-y-4">
+              <li class="flex items-start gap-3">
+                <span class="mt-1 w-5 h-5 rounded-full bg-[#35C6BC]/20 border border-[#35C6BC] flex items-center justify-center text-[#35C6BC] flex-shrink-0 text-xs">✓</span>
+                <div>
+                  <strong class="text-[#F5F7FB] block text-sm font-semibold">IA Generativa en Entornos Profesionales</strong>
+                  <span class="text-xs text-[#94A3B8]">Aplicación de LLMs, Copilot Cowork y Microsoft 365 Copilot para potenciar flujos diarios de trabajo.</span>
+                </div>
+              </li>
+              <li class="flex items-start gap-3">
+                <span class="mt-1 w-5 h-5 rounded-full bg-[#35C6BC]/20 border border-[#35C6BC] flex items-center justify-center text-[#35C6BC] flex-shrink-0 text-xs">✓</span>
+                <div>
+                  <strong class="text-[#F5F7FB] block text-sm font-semibold">Automatización Documental y de Tareas</strong>
+                  <span class="text-xs text-[#94A3B8]">Optimización de la revisión de documentación técnica, informes de avance y extracción estructurada de datos.</span>
+                </div>
+              </li>
+              <li class="flex items-start gap-3">
+                <span class="mt-1 w-5 h-5 rounded-full bg-[#35C6BC]/20 border border-[#35C6BC] flex items-center justify-center text-[#35C6BC] flex-shrink-0 text-xs">✓</span>
+                <div>
+                  <strong class="text-[#F5F7FB] block text-sm font-semibold">Desarrollo de Soluciones mediante Vibe Coding</strong>
+                  <span class="text-xs text-[#94A3B8]">Creación rápida de herramientas digitales, landing pages y utilidades web asistidas por IA.</span>
+                </div>
+              </li>
+              <li class="flex items-start gap-3">
+                <span class="mt-1 w-5 h-5 rounded-full bg-[#35C6BC]/20 border border-[#35C6BC] flex items-center justify-center text-[#35C6BC] flex-shrink-0 text-xs">✓</span>
+                <div>
+                  <strong class="text-[#F5F7FB] block text-sm font-semibold">Asistentes, Agentes y Prompt Engineering</strong>
+                  <span class="text-xs text-[#94A3B8]">Diseño de instrucciones y arquitecturas de prompts orientadas a contextos de ingeniería y productividad.</span>
+                </div>
+              </li>
+              <li class="flex items-start gap-3">
+                <span class="mt-1 w-5 h-5 rounded-full bg-[#35C6BC]/20 border border-[#35C6BC] flex items-center justify-center text-[#35C6BC] flex-shrink-0 text-xs">✓</span>
+                <div>
+                  <strong class="text-[#F5F7FB] block text-sm font-semibold">Formación y Divulgación Interna</strong>
+                  <span class="text-xs text-[#94A3B8]">Promotor y formador en herramientas de IA entre colegas y líderes, elevando la adopción tecnológica.</span>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         5. PROYECTOS Y EXPERIENCIAS (PORTAFOLIO MODULAR CON ESTADOS)
+         ==================================================================== -->
+    <section class="py-20 bg-[#0B1220]/60 border-t border-b border-white/5">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="max-w-3xl mx-auto text-center mb-16">
+          <div class="reveal-on-scroll tech-badge mb-3">
+            <span>Resultados Verificables</span>
+          </div>
+          <h2 class="reveal-on-scroll delay-100 text-3xl sm:text-4xl font-extrabold text-[#F5F7FB] mb-4">
+            Proyectos y Experiencias Seleccionadas
+          </h2>
+          <p class="reveal-on-scroll delay-200 text-base sm:text-lg text-[#94A3B8]">
+            Casos concretos acreditados en gestión industrial, ingeniería eléctrica e innovación digital.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+          
+          <!-- Caso 1: Altonorte -->
+          <div class="glass-panel p-8 card-hover flex flex-col justify-between">
+            <div>
+              <div class="flex items-center justify-between mb-4">
+                <span class="text-xs font-semibold text-[#94A3B8]">Complejo Metalúrgico Altonorte</span>
+                <span class="status-badge status-implemented">
+                  <span class="w-1.5 h-1.5 rounded-full bg-emerald-400"></span> Implementado
+                </span>
+              </div>
+              <h3 class="text-xl font-bold text-[#F5F7FB] mb-3">
+                Gestión y Control de Cartera de Inversiones CAPEX
+              </h3>
+              <p class="text-sm text-[#94A3B8] mb-6 leading-relaxed">
+                Administración integral de proyectos en todas sus fases, desde licitaciones y selección de contratistas hasta la gestión con patrocinadores y pases de puerta.
+              </p>
+              <div class="p-4 rounded-xl bg-[#0B1220]/70 border border-white/5 mb-6">
+                <div class="text-xs text-[#35C6BC] font-semibold mb-1">Métricas de Logro Verificadas:</div>
+                <div class="text-sm text-[#F5F7FB] font-medium">
+                  <strong>95%</strong> de proyectos completados dentro del presupuesto y <strong>90%</strong> dentro del plazo previsto.
+                </div>
+              </div>
+            </div>
+            <div class="text-xs text-[#94A3B8] flex items-center gap-2 pt-4 border-t border-white/5">
+              <span>Metodología PMBOK · SAP ERP · MS Project</span>
+            </div>
+          </div>
+
+          <!-- Caso 2: Pares&Alvarez / Albemarle -->
+          <div class="glass-panel p-8 card-hover flex flex-col justify-between">
+            <div>
+              <div class="flex items-center justify-between mb-4">
+                <span class="text-xs font-semibold text-[#94A3B8]">Albemarle · Pares&amp;Alvarez</span>
+                <span class="status-badge status-active">
+                  <span class="w-1.5 h-1.5 rounded-full bg-[#35C6BC]"></span> En Curso
+                </span>
+              </div>
+              <h3 class="text-xl font-bold text-[#F5F7FB] mb-3">
+                Aseguramiento Técnico en Plantas La Negra y Salar de Atacama
+              </h3>
+              <p class="text-sm text-[#94A3B8] mb-6 leading-relaxed">
+                Revisión técnica de memorias de cálculo, EETT y planos desarrollados por ingenierías externas, garantizando el cumplimiento estricto de los Pliegos RIC y criterios de Albemarle.
+              </p>
+              <div class="p-4 rounded-xl bg-[#0B1220]/70 border border-white/5 mb-6">
+                <div class="text-xs text-[#35C6BC] font-semibold mb-1">Impacto Verificado:</div>
+                <div class="text-sm text-[#F5F7FB] font-medium">
+                  Detección temprana de desviaciones en criterios de diseño y protecciones, reduciendo riesgos de reprocesos y sobrecostos.
+                </div>
+              </div>
+            </div>
+            <div class="text-xs text-[#94A3B8] flex items-center gap-2 pt-4 border-t border-white/5">
+              <span>Pliegos RIC · Bases Técnicas BBTT · Project Capital</span>
+            </div>
+          </div>
+
+          <!-- Caso 3: Albemarle Planta Fotovoltaica -->
+          <div class="glass-panel p-8 card-hover flex flex-col justify-between">
+            <div>
+              <div class="flex items-center justify-between mb-4">
+                <span class="text-xs font-semibold text-[#94A3B8]">Albemarle Corporation</span>
+                <span class="status-badge status-implemented">
+                  <span class="w-1.5 h-1.5 rounded-full bg-emerald-400"></span> Implementado
+                </span>
+              </div>
+              <h3 class="text-xl font-bold text-[#F5F7FB] mb-3">
+                Primera Planta Fotovoltaica de 10 kW en Faena Salar de Atacama
+              </h3>
+              <p class="text-sm text-[#94A3B8] mb-6 leading-relaxed">
+                Supervisión técnica e inspección de obras (ITO) de montaje eléctrico y modernización integral de sistemas de iluminación en condiciones extremas del Salar de Atacama.
+              </p>
+              <div class="p-4 rounded-xl bg-[#0B1220]/70 border border-white/5 mb-6">
+                <div class="text-xs text-[#35C6BC] font-semibold mb-1">Resultado:</div>
+                <div class="text-sm text-[#F5F7FB] font-medium">
+                  Puesta en marcha exitosa de generación fotovoltaica pionera para soporte de infraestructura en faena.
+                </div>
+              </div>
+            </div>
+            <div class="text-xs text-[#94A3B8] flex items-center gap-2 pt-4 border-t border-white/5">
+              <span>Energía Solar · Supervisión ITO · Faena Salar de Atacama</span>
+            </div>
+          </div>
+
+          <!-- Caso 4: IAProing - Soluciones con IA -->
+          <div class="glass-panel p-8 card-hover border-[#35C6BC]/30 bg-gradient-to-br from-[#16243A] to-[#0B1220] flex flex-col justify-between">
+            <div>
+              <div class="flex items-center justify-between mb-4">
+                <div class="flex items-center gap-2.5">
+                  <img src="assets/images/iaproing-icon.png" alt="Isotipo IAProing" class="w-8 h-8 rounded-full border border-[#35C6BC]/50 shadow-md flex-shrink-0">
+                  <span class="text-xs font-semibold text-[#35C6BC]">IAProing · Innovación Digital</span>
+                </div>
+                <span class="status-badge status-development">
+                  <span class="w-1.5 h-1.5 rounded-full bg-indigo-400"></span> En Desarrollo
+                </span>
+              </div>
+              <h3 class="text-xl font-bold text-[#F5F7FB] mb-3">
+                Automatización de Procesos y Vibe Coding para Productividad
+              </h3>
+              <p class="text-sm text-[#94A3B8] mb-6 leading-relaxed">
+                Diseño de flujos de trabajo asistidos por IA generativa para acelerar la gestión documental, análisis de datos y creación ágil de herramientas web para el trabajo técnico diario.
+              </p>
+              <div class="p-4 rounded-xl bg-[#0B1220]/70 border border-white/5 mb-6">
+                <div class="text-xs text-[#35C6BC] font-semibold mb-1">Enfoque:</div>
+                <div class="text-sm text-[#F5F7FB] font-medium">
+                  Cerrar la brecha entre la IA generativa de vanguardia y las necesidades prácticas de profesionales y empresas de ingeniería.
+                </div>
+              </div>
+            </div>
+            <div class="text-xs text-[#35C6BC] flex items-center gap-2 pt-4 border-t border-white/5 font-semibold">
+              <span>IA Generativa · Vibe Coding · Agentes Autónomos</span>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         6. FORMACIÓN Y TRAYECTORIA (TIMELINE ELEGANTE)
+         ==================================================================== -->
+    <section class="py-24">
+      <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="text-center mb-16">
+          <div class="reveal-on-scroll tech-badge mb-3">
+            <span>Credenciales &amp; Hitos</span>
+          </div>
+          <h2 class="reveal-on-scroll delay-100 text-3xl sm:text-4xl font-extrabold text-[#F5F7FB] mb-4">
+            Formación y Trayectoria
+          </h2>
+          <p class="reveal-on-scroll delay-200 text-base sm:text-lg text-[#94A3B8]">
+            Evolución profesional continua respaldada por instituciones académicas y certificaciones oficiales.
+          </p>
+        </div>
+
+        <div class="space-y-8">
+          
+          <!-- Hito: IA y Automatizaciones -->
+          <div class="timeline-item reveal-on-scroll">
+            <div class="timeline-dot"></div>
+            <div class="glass-panel p-6 sm:p-8 card-hover">
+              <div class="flex flex-wrap items-center justify-between gap-2 mb-2">
+                <h3 class="text-lg font-bold text-[#F5F7FB]">Experto en Inteligencia Artificial y Automatizaciones</h3>
+                <span class="text-xs font-semibold text-[#35C6BC] px-2.5 py-1 rounded bg-[#35C6BC]/10">2024 - 2025</span>
+              </div>
+              <div class="text-sm font-medium text-[#35C6BC] mb-2">Learning Heroes</div>
+              <p class="text-sm text-[#94A3B8]">
+                Formación especializada en aplicaciones prácticas de IA generativa, automatización de procesos, agentes y soluciones digitales. Complementado con certificaciones oficiales en Microsoft 365 Copilot y Prompt Engineering.
+              </p>
+            </div>
+          </div>
+
+          <!-- Hito: PMBOK 7ma Edición -->
+          <div class="timeline-item reveal-on-scroll">
+            <div class="timeline-dot"></div>
+            <div class="glass-panel p-6 sm:p-8 card-hover">
+              <div class="flex flex-wrap items-center justify-between gap-2 mb-2">
+                <h3 class="text-lg font-bold text-[#F5F7FB]">Dirección de Proyectos Basado en el PMBOK 7ma Edición</h3>
+                <span class="text-xs font-semibold text-[#35C6BC] px-2.5 py-1 rounded bg-[#35C6BC]/10">2024</span>
+              </div>
+              <div class="text-sm font-medium text-[#35C6BC] mb-2">CGI Gestión e Innovación</div>
+              <p class="text-sm text-[#94A3B8]">
+                Actualización y profundización en el marco de dirección de proyectos adaptativo, predictivo e híbrido bajo los estándares de la 7ma edición del PMI.
+              </p>
+            </div>
+          </div>
+
+          <!-- Hito: Diplomado UAI -->
+          <div class="timeline-item reveal-on-scroll">
+            <div class="timeline-dot"></div>
+            <div class="glass-panel p-6 sm:p-8 card-hover">
+              <div class="flex flex-wrap items-center justify-between gap-2 mb-2">
+                <h3 class="text-lg font-bold text-[#F5F7FB]">Diplomado en Dirección de Proyectos</h3>
+                <span class="text-xs font-semibold text-[#35C6BC] px-2.5 py-1 rounded bg-[#35C6BC]/10">2013 - 2014</span>
+              </div>
+              <div class="text-sm font-medium text-[#35C6BC] mb-2">Universidad Adolfo Ibáñez</div>
+              <p class="text-sm text-[#94A3B8]">
+                Especialización ejecutiva en formulación, evaluación, control de gestión, gestión de stakeholders y riesgos en proyectos complejos de ingeniería e inversión.
+              </p>
+            </div>
+          </div>
+
+          <!-- Hito: Universidad de Antofagasta -->
+          <div class="timeline-item reveal-on-scroll">
+            <div class="timeline-dot"></div>
+            <div class="glass-panel p-6 sm:p-8 card-hover">
+              <div class="flex flex-wrap items-center justify-between gap-2 mb-2">
+                <h3 class="text-lg font-bold text-[#F5F7FB]">Ingeniero de Ejecución en Electricidad</h3>
+                <span class="text-xs font-semibold text-[#35C6BC] px-2.5 py-1 rounded bg-[#35C6BC]/10">2004 - 2006</span>
+              </div>
+              <div class="text-sm font-medium text-[#35C6BC] mb-2">Universidad de Antofagasta · Licenciado en Ingeniería Aplicada</div>
+              <p class="text-sm text-[#94A3B8]">
+                Formación fundamental en potencia, máquinas eléctricas, redes y sistemas de control industrial. Con estudios previos en Ingeniería Civil Industrial Eléctrica (1997 - 2003).
+              </p>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Insignias Institucionales de Respaldo -->
+        <div class="reveal-on-scroll delay-200 mt-16 grid grid-cols-1 md:grid-cols-2 gap-6">
+          
+          <!-- Licencia SEC Clase A -->
+          <div class="p-6 rounded-2xl glass-panel border-white/5 flex items-center gap-4 card-hover">
+            <img src="assets/images/sec-clase-a.svg" alt="Sello SEC Clase A" class="w-16 h-16 flex-shrink-0">
+            <div class="text-left">
+              <div class="flex items-center gap-2 mb-1">
+                <span class="text-sm font-bold text-[#F5F7FB]">Licencia SEC Clase A</span>
+                <span class="px-2 py-0.5 rounded text-[10px] font-bold bg-[#35C6BC]/20 text-[#35C6BC]">OFICIAL</span>
+              </div>
+              <div class="text-xs text-[#35C6BC] font-medium mb-1">Superintendencia de Electricidad y Combustibles</div>
+              <div class="text-xs text-[#94A3B8]">Instalador Eléctrico Autorizado sin límite de potencia en Alta, Media y Baja Tensión en Chile.</div>
+            </div>
+          </div>
+
+          <!-- Cámara Chilena de Inteligencia Artificial (CCHIA) -->
+          <div class="p-6 rounded-2xl glass-panel border-[#35C6BC]/30 bg-gradient-to-br from-[#16243A] to-[#0B1220] flex items-center gap-4 card-hover shadow-lg">
+            <div class="w-16 h-16 rounded-xl bg-white p-2 flex items-center justify-center flex-shrink-0 shadow-md border border-white/20">
+              <img src="assets/images/cchia-logo.jpg" alt="Logo Cámara Chilena de Inteligencia Artificial CCHIA" class="w-full h-full object-contain">
+            </div>
+            <div class="text-left">
+              <div class="flex items-center gap-2 mb-1">
+                <span class="text-sm font-bold text-[#F5F7FB]">Cámara Chilena de IA</span>
+                <span class="px-2 py-0.5 rounded text-[10px] font-bold bg-[#35C6BC]/20 text-[#35C6BC] border border-[#35C6BC]/40">SOCIO ACTIVO</span>
+              </div>
+              <div class="text-xs text-[#35C6BC] font-medium mb-1">CCHIA · Ecosistema de Inteligencia Artificial en Chile</div>
+              <div class="text-xs text-[#94A3B8]">Socio activo participando en la vinculación, divulgación y adopción ética de IA en los sectores productivos.</div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         7. IAPROING — EMPRENDIMIENTO DE INTELIGENCIA ARTIFICIAL APLICADA
+         ==================================================================== -->
+    <section class="py-20 relative overflow-hidden bg-gradient-to-b from-[#0B1220] via-[#16243A]/40 to-[#0B1220]">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        
+        <div class="glass-panel p-8 sm:p-14 border border-[#35C6BC]/30 relative overflow-hidden">
+          
+          <!-- Efecto de gradiente sutil de fondo -->
+          <div class="absolute -right-20 -top-20 w-80 h-80 bg-[#35C6BC]/10 rounded-full blur-3xl pointer-events-none"></div>
+
+          <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+            
+            <div class="lg:col-span-7 space-y-6">
+              
+              <!-- Cabecera de Marca Oficial IAProing -->
+              <div class="flex items-center gap-4">
+                <div class="relative w-16 h-16 flex-shrink-0">
+                  <div class="absolute inset-0 bg-[#35C6BC]/30 rounded-full blur-md"></div>
+                  <img src="assets/images/iaproing-icon.png" alt="Isotipo Oficial IAProing" class="relative w-16 h-16 object-contain drop-shadow-md">
+                </div>
+                <div>
+                  <div class="text-xs font-bold text-[#35C6BC] uppercase tracking-wider">Iniciativa &amp; Emprendimiento</div>
+                  <h3 class="text-2xl sm:text-3xl font-extrabold text-[#F5F7FB] font-heading">IAProing</h3>
+                  <div class="text-xs text-[#94A3B8]">Inteligencia Artificial Aplicada</div>
+                </div>
+              </div>
+
+              <div class="space-y-4 text-base sm:text-lg text-[#94A3B8] leading-relaxed">
+                <p class="text-[#F5F7FB] font-semibold text-lg">
+                  Soluciones prácticas de IA para optimizar procesos y elevar la productividad
+                </p>
+                <p>
+                  Como fundador de <strong class="text-[#F5F7FB]">IAProing</strong>, impulso una iniciativa orientada a explorar y desarrollar soluciones prácticas de inteligencia artificial para optimizar procesos, automatizar tareas y mejorar la productividad de profesionales y empresas.
+                </p>
+                <p class="text-sm">
+                  Un puente directo entre la disciplina de la ingeniería y las herramientas de IA generativa de última generación.
+                </p>
+              </div>
+
+              <!-- Enlace Oficial a IAProing -->
+              <div class="pt-2">
+                <a href="https://iaproing.com" target="_blank" rel="noopener noreferrer" class="btn-primary inline-flex">
+                  <span>Conoce IAProing</span>
+                  <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                  </svg>
+                </a>
+              </div>
+
+            </div>
+
+            <!-- Columna Visual con el Logotipo Completo Oficial -->
+            <div class="lg:col-span-5 flex justify-center">
+              <div class="w-full max-w-sm p-6 sm:p-8 rounded-3xl bg-gradient-to-b from-[#16243A] to-[#0B1220] border border-[#35C6BC]/40 shadow-2xl text-center space-y-5 group">
+                
+                <!-- Contenedor del Logo Completo con fondo claro nítido para máxima legibilidad -->
+                <div class="p-5 rounded-2xl bg-white shadow-xl border border-white/20 transition-all duration-300 group-hover:scale-[1.02]">
+                  <img src="assets/images/iaproing-full.png" alt="Logotipo Oficial IAProing" class="w-48 max-w-full h-auto mx-auto object-contain">
+                </div>
+
+                <div class="space-y-1">
+                  <div class="text-xs font-semibold text-[#94A3B8] uppercase tracking-wider">Sitio Web Oficial</div>
+                  <a href="https://iaproing.com" target="_blank" rel="noopener noreferrer" class="text-base font-bold text-[#35C6BC] hover:underline block">
+                    iaproing.com
+                  </a>
+                  <p class="text-xs text-[#94A3B8] pt-1">Automatización · Asistentes de IA · Vibe Coding</p>
+                </div>
+
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         8. CONTACTO Y REDES SOCIALES
+         ==================================================================== -->
+    <section id="contacto" class="py-24 border-t border-white/5">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        
+        <div class="reveal-on-scroll tech-badge mb-3">
+          <span>Oportunidades &amp; Colaboraciones</span>
+        </div>
+        
+        <h2 class="reveal-on-scroll delay-100 text-3xl sm:text-5xl font-extrabold text-[#F5F7FB] mb-6">
+          Iniciemos una conversación
+        </h2>
+        
+        <p class="reveal-on-scroll delay-200 text-base sm:text-lg text-[#94A3B8] max-w-2xl mx-auto mb-12">
+          ¿Tienes un proyecto industrial en mente o buscas incorporar soluciones prácticas de inteligencia artificial para optimizar la productividad de tu organización? Conversemos directamente.
+        </p>
+
+        <!-- Canales de Contacto Directo -->
+        <div class="reveal-on-scroll delay-300 grid grid-cols-1 sm:grid-cols-2 gap-6 max-w-xl mx-auto mb-12">
+          
+          <!-- Canal WhatsApp -->
+          <a href="https://wa.me/56987642331?text=Hola%20Claudio,%20visit%C3%A9%20tu%20sitio%20web%20y%20me%20gustar%C3%ADa%20conversar%20contigo%20sobre%20una%20oportunidad%20profesional%20o%20proyecto." target="_blank" rel="noopener noreferrer" class="glass-panel p-6 card-hover flex flex-col items-center group">
+            <div class="w-14 h-14 rounded-full bg-[#25D366]/10 border border-[#25D366]/30 flex items-center justify-center text-[#25D366] group-hover:scale-110 transition-transform mb-4">
+              <svg class="w-7 h-7 fill-current" viewBox="0 0 448 512">
+                <path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"/>
+              </svg>
+            </div>
+            <div class="text-base font-bold text-[#F5F7FB] mb-1">WhatsApp Directo</div>
+            <div class="text-xs text-[#35C6BC]">+56 9 8764 2331</div>
+          </a>
+
+          <!-- Canal LinkedIn -->
+          <a href="https://cl.linkedin.com/in/claudio-castillo-pmp" target="_blank" rel="noopener noreferrer" class="glass-panel p-6 card-hover flex flex-col items-center group">
+            <div class="w-14 h-14 rounded-full bg-[#0077B5]/10 border border-[#0077B5]/30 flex items-center justify-center text-[#0077B5] group-hover:scale-110 transition-transform mb-4">
+              <svg class="w-7 h-7 fill-current" viewBox="0 0 24 24">
+                <path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 8.76a1.62 1.62 0 1 0 0-3.24 1.62 1.62 0 0 0 0 3.24m1.39 9.74v-8.37H5.07v8.37h2.78Z"/>
+              </svg>
+            </div>
+            <div class="text-base font-bold text-[#F5F7FB] mb-1">LinkedIn Profesional</div>
+            <div class="text-xs text-[#35C6BC]">in/claudio-castillo-pmp</div>
+          </a>
+
+        </div>
+
+        <div class="text-xs text-[#94A3B8]">
+          Ubicación base: Antofagasta, Región de Antofagasta, Chile · Cobertura para proyectos nacionales e internacionales.
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         9. FOOTER MINIMALISTA
+         ==================================================================== -->
+    <footer class="mt-auto py-12 bg-[#080E18] border-t border-white/5 text-xs text-[#64748B]">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex flex-col md:flex-row items-center justify-between gap-6">
+          
+          <div class="text-center md:text-left">
+            <div class="font-heading font-bold text-sm text-[#F5F7FB] mb-1">
+              Claudio Castillo Ordenes
+            </div>
+            <p class="text-xs text-[#94A3B8]">
+              Ingeniería Eléctrica · Inteligencia Artificial Aplicada · Optimización de Procesos
+            </p>
+          </div>
+
+          <div class="flex items-center gap-6">
+            <a href="https://cl.linkedin.com/in/claudio-castillo-pmp" target="_blank" rel="noopener noreferrer" class="hover:text-[#35C6BC] transition-colors">
+              LinkedIn
+            </a>
+            <a href="https://iaproing.com" target="_blank" rel="noopener noreferrer" class="hover:text-[#35C6BC] transition-colors">
+              IAProing
+            </a>
+            <a href="https://wa.me/56987642331" target="_blank" rel="noopener noreferrer" class="hover:text-[#35C6BC] transition-colors">
+              WhatsApp
+            </a>
+          </div>
+
+          <div class="text-center md:text-right">
+            <div>© <span id="current-year">2026</span> Claudio Castillo Ordenes.</div>
+            <div>Todos los derechos reservados. Antofagasta, Chile.</div>
+          </div>
+
+        </div>
+      </div>
+    </footer>
+
+    <!-- ====================================================================
+         10. BOTONES FLOTANTES
+         ==================================================================== -->
+    
+    <!-- Botón Volver Arriba -->
+    <button 
+      id="back-to-top-btn" 
+      class="floating-back-to-top" 
+      aria-label="Volver al inicio de la página"
+      aria-hidden="true"
+    >
+      <svg fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 15l7-7 7 7" />
+      </svg>
+    </button>
+
+    <!-- Botón Oficial Flotante de WhatsApp -->
+    <a 
+      href="https://wa.me/56987642331?text=Hola%20Claudio,%20visit%C3%A9%20tu%20sitio%20web%20y%20me%20gustar%C3%ADa%20conversar%20contigo%20sobre%20una%20oportunidad%20profesional%20o%20proyecto." 
+      target="_blank" 
+      rel="noopener noreferrer" 
+      class="floating-whatsapp"
+      aria-label="Chatear por WhatsApp con Claudio Castillo"
+    >
+      <svg viewBox="0 0 448 512" class="w-8 h-8 fill-white">
+        <path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"/>
+      </svg>
+    </a>
+
+  </div>
+
+  <!-- Script de Interacciones y Animaciones -->
+  <script src="js/main.js"></script>
+</body>
+</html>
+

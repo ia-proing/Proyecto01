@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 80" width="100%" height="100%">
+  <defs>
+    <linearGradient id="iap-glow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#35C6BC" />
+      <stop offset="100%" stop-color="#0E8A85" />
+    </linearGradient>
+    <linearGradient id="iap-accent" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#6EE7B7" />
+      <stop offset="100%" stop-color="#35C6BC" />
+    </linearGradient>
+  </defs>
+
+  <!-- Isotipo Simbólico: Nodo de Ingeniería y Red Neuronal -->
+  <g transform="translate(10, 10)">
+    <!-- Hexágono base / Estructura de ingeniería -->
+    <polygon points="30,2 58,18 58,50 30,66 2,50 2,18" fill="none" stroke="#1E293B" stroke-width="2.5" />
+    
+    <!-- Conexiones activas / IA -->
+    <path d="M 30,12 L 48,22 L 48,46 L 30,56 L 12,46 L 12,22 Z" fill="none" stroke="url(#iap-glow)" stroke-width="2.5" stroke-linejoin="round" />
+    
+    <!-- Centro nodal de energía y datos -->
+    <circle cx="30" cy="34" r="7" fill="url(#iap-accent)" />
+    <circle cx="30" cy="12" r="3.5" fill="#35C6BC" />
+    <circle cx="48" cy="46" r="3.5" fill="#35C6BC" />
+    <circle cx="12" cy="46" r="3.5" fill="#35C6BC" />
+
+    <!-- Líneas de pulso -->
+    <line x1="30" y1="27" x2="30" y2="15.5" stroke="#35C6BC" stroke-width="2" />
+    <line x1="34" y1="38" x2="45" y2="44" stroke="#35C6BC" stroke-width="2" />
+    <line x1="26" y1="38" x2="15" y2="44" stroke="#35C6BC" stroke-width="2" />
+  </g>
+
+  <!-- Tipografía de Marca -->
+  <g transform="translate(85, 46)">
+    <!-- IA en Cian Tecnológico -->
+    <text font-family="'Manrope', 'Inter', -apple-system, sans-serif" font-weight="800" font-size="28" fill="#35C6BC" letter-spacing="0.5">IA</text>
+    <!-- Proing en Blanco Nieve -->
+    <text x="36" font-family="'Manrope', 'Inter', -apple-system, sans-serif" font-weight="700" font-size="28" fill="#F5F7FB" letter-spacing="-0.5">Proing</text>
+    <!-- Subtítulo Descriptor -->
+    <text x="2" y="16" font-family="'Inter', -apple-system, sans-serif" font-weight="500" font-size="9" fill="#94A3B8" letter-spacing="2.2" text-transform="uppercase">Inteligencia Artificial Aplicada</text>
+  </g>
+</svg>
+
