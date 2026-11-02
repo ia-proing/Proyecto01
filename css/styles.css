@@ -1,5 +1,5 @@
 /* ==========================================================================
-   CLAUDIO CASTILLO ORDENES — SITIO WEB PERSONAL OFICIAL
+   CLAUDIO CASTILLO ORDENES — SITIO WEB PERSONAL (VERSIÓN 2)
    Estilo: Dark Premium (Inspirado en la sofisticación y fluidez de Apple)
    ========================================================================== */
 
@@ -7,7 +7,7 @@
   --bg-primary: #0B1220;
   --bg-surface: #16243A;
   --bg-surface-elevated: #1C2D47;
-  --bg-surface-glass: rgba(22, 36, 58, 0.75);
+  --bg-surface-glass: rgba(22, 36, 58, 0.78);
   
   --accent-cyan: #35C6BC;
   --accent-cyan-glow: rgba(53, 198, 188, 0.18);
@@ -18,18 +18,18 @@
   --text-muted: #64748B;
   
   --border-subtle: rgba(255, 255, 255, 0.08);
-  --border-highlight: rgba(255, 255, 255, 0.15);
+  --border-highlight: rgba(255, 255, 255, 0.16);
   
   --whatsapp-color: #25D366;
-  --whatsapp-glow: rgba(37, 211, 102, 0.35);
+  --whatsapp-glow: rgba(37, 211, 102, 0.45);
   
   --font-heading: 'Manrope', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
   --font-body: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
   
   --ease-apple: cubic-bezier(0.16, 1, 0.3, 1);
-  --transition-fast: 0.25s var(--ease-apple);
-  --transition-smooth: 0.45s var(--ease-apple);
-  --transition-slow: 0.8s var(--ease-apple);
+  --transition-fast: 0.22s var(--ease-apple);
+  --transition-smooth: 0.4s var(--ease-apple);
+  --transition-slow: 0.65s var(--ease-apple);
 }
 
 /* Reset y Base */
@@ -66,6 +66,12 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 1.25;
 }
 
+.hero-title {
+  font-size: clamp(2.15rem, 5.5vw, 3.85rem);
+  line-height: 1.12;
+  letter-spacing: -0.035em;
+}
+
 p {
   color: var(--text-secondary);
 }
@@ -84,7 +90,7 @@ a {
   z-index: 0;
   background-image: 
     radial-gradient(circle at 15% 15%, rgba(53, 198, 188, 0.05) 0%, transparent 40%),
-    radial-gradient(circle at 85% 60%, rgba(22, 36, 58, 0.8) 0%, transparent 60%),
+    radial-gradient(circle at 85% 55%, rgba(22, 36, 58, 0.7) 0%, transparent 55%),
     radial-gradient(circle at 50% 90%, rgba(53, 198, 188, 0.04) 0%, transparent 50%);
 }
 
@@ -103,23 +109,42 @@ a {
   transition: border-color var(--transition-smooth), transform var(--transition-smooth), box-shadow var(--transition-smooth);
 }
 
-.glass-panel:hover {
-  border-color: var(--border-highlight);
-  box-shadow: 0 12px 36px -8px rgba(0, 0, 0, 0.45);
+/* Interacciones según capacidad del dispositivo (hover en cursor, active en táctil) */
+@media (hover: hover) {
+  .glass-panel:hover {
+    border-color: var(--border-highlight);
+    box-shadow: 0 12px 36px -8px rgba(0, 0, 0, 0.45);
+  }
+
+  .card-hover:hover {
+    transform: translateY(-3px);
+    border-color: var(--accent-cyan-border);
+    box-shadow: 0 16px 40px -10px rgba(53, 198, 188, 0.12);
+  }
+
+  .btn-primary:hover {
+    background: #47DDD3;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 28px rgba(53, 198, 188, 0.4);
+  }
+
+  .btn-secondary:hover {
+    background: rgba(255, 255, 255, 0.08);
+    border-color: var(--border-highlight);
+    color: #FFFFFF;
+    transform: translateY(-2px);
+  }
 }
 
-/* Tarjetas interactivas con efecto de elevación sutil */
-.card-hover {
-  transition: transform var(--transition-smooth), border-color var(--transition-smooth), box-shadow var(--transition-smooth);
+@media (hover: none) {
+  .card-hover:active,
+  .btn-primary:active,
+  .btn-secondary:active {
+    transform: scale(0.985);
+  }
 }
 
-.card-hover:hover {
-  transform: translateY(-4px);
-  border-color: var(--accent-cyan-border);
-  box-shadow: 0 16px 40px -10px rgba(53, 198, 188, 0.12);
-}
-
-/* Badge Tecnológico */
+/* Badge Tecnológico Sobrio */
 .tech-badge {
   display: inline-flex;
   align-items: center;
@@ -128,40 +153,10 @@ a {
   border-radius: 9999px;
   font-size: 0.8125rem;
   font-weight: 600;
-  letter-spacing: 0.02em;
+  letter-spacing: 0.03em;
   background: rgba(53, 198, 188, 0.08);
   border: 1px solid rgba(53, 198, 188, 0.25);
   color: var(--accent-cyan);
-}
-
-.status-badge {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.375rem;
-  padding: 0.25rem 0.65rem;
-  border-radius: 9999px;
-  font-size: 0.75rem;
-  font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
-}
-
-.status-implemented {
-  background: rgba(16, 185, 129, 0.12);
-  border: 1px solid rgba(16, 185, 129, 0.3);
-  color: #34D399;
-}
-
-.status-active {
-  background: rgba(53, 198, 188, 0.12);
-  border: 1px solid rgba(53, 198, 188, 0.35);
-  color: var(--accent-cyan);
-}
-
-.status-development {
-  background: rgba(99, 102, 241, 0.12);
-  border: 1px solid rgba(99, 102, 241, 0.3);
-  color: #818CF8;
 }
 
 /* Botones Apple-Like */
@@ -181,12 +176,7 @@ a {
   box-shadow: 0 4px 20px rgba(53, 198, 188, 0.25);
   border: none;
   cursor: pointer;
-}
-
-.btn-primary:hover {
-  background: #47DDD3;
-  transform: translateY(-2px);
-  box-shadow: 0 8px 28px rgba(53, 198, 188, 0.4);
+  min-height: 48px;
 }
 
 .btn-secondary {
@@ -205,44 +195,124 @@ a {
   transition: all var(--transition-fast);
   cursor: pointer;
   backdrop-filter: blur(8px);
+  min-height: 48px;
 }
 
-.btn-secondary:hover {
-  background: rgba(255, 255, 255, 0.08);
-  border-color: var(--border-highlight);
-  color: #FFFFFF;
-  transform: translateY(-2px);
-}
-
-/* Indicador de Disponibilidad Verde Pulsante */
-.pulse-dot {
-  width: 8px;
-  height: 8px;
-  background-color: #10B981;
-  border-radius: 50%;
+/* ==========================================================================
+   FOTOGRAFÍA HERO (SECCIÓN 8): UN SOLO MARCO CON HALO DIFUSO FIJO
+   ========================================================================== */
+.hero-photo-wrapper {
   position: relative;
+  display: inline-block;
+  width: 100%;
+  max-width: 380px;
 }
 
-.pulse-dot::after {
-  content: '';
+/* Halo sutil fijo en #35C6BC (opacidad 18-22%, sin pulsos) */
+.hero-photo-halo {
   position: absolute;
-  inset: -3px;
+  inset: -22px;
+  background: radial-gradient(circle at 50% 50%, rgba(53, 198, 188, 0.20) 0%, rgba(53, 198, 188, 0.08) 55%, transparent 75%);
+  filter: blur(30px);
+  pointer-events: none;
+  z-index: 0;
+  border-radius: 2rem;
+}
+
+/* Marco único rectangular vertical limpio */
+.hero-photo-frame {
+  position: relative;
+  z-index: 1;
+  aspect-ratio: 4 / 5.2;
+  border-radius: 1.35rem; /* 22px */
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  background-color: var(--bg-surface);
+  box-shadow: 0 20px 45px -10px rgba(0, 0, 0, 0.6);
+}
+
+.hero-photo-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 20%;
+  animation: fadeInPhoto 0.5s ease-out forwards;
+}
+
+@keyframes fadeInPhoto {
+  from {
+    opacity: 0;
+    transform: scale(0.985);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Versión circular pequeña para la sección de Contacto (96-120px) */
+.contact-avatar-wrapper {
+  position: relative;
+  width: 104px;
+  height: 104px;
+  margin: 0 auto 1.5rem auto;
+}
+
+.contact-avatar-halo {
+  position: absolute;
+  inset: -10px;
+  background: radial-gradient(circle at 50% 50%, rgba(53, 198, 188, 0.16) 0%, transparent 70%);
+  filter: blur(14px);
   border-radius: 50%;
-  background-color: #10B981;
-  opacity: 0.6;
-  animation: pulse-ring 2s infinite var(--ease-apple);
+  pointer-events: none;
 }
 
-@keyframes pulse-ring {
-  0% { transform: scale(0.9); opacity: 0.7; }
-  50% { transform: scale(1.6); opacity: 0; }
-  100% { transform: scale(0.9); opacity: 0; }
+.contact-avatar-img {
+  position: relative;
+  width: 104px;
+  height: 104px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center 20%;
+  border: 2px solid rgba(53, 198, 188, 0.35);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5);
 }
 
-/* Animaciones de Scroll Reveal estilo Apple */
+/* ==========================================================================
+   YOUTUBE LITE EMBED (SECCIÓN 5.2)
+   ========================================================================== */
+.youtube-lite-embed {
+  position: relative;
+  aspect-ratio: 16 / 9;
+  width: 100%;
+  border-radius: 1rem;
+  overflow: hidden;
+  background-color: #07101B;
+  border: 1px solid var(--border-subtle);
+}
+
+.youtube-play-btn {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  background-color: var(--accent-cyan);
+  color: #07101B;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 10px 30px rgba(53, 198, 188, 0.4);
+  transition: transform var(--transition-fast), background-color var(--transition-fast);
+}
+
+.youtube-lite-embed:hover .youtube-play-btn {
+  transform: scale(1.1);
+  background-color: #47DDD3;
+}
+
+/* Animaciones de Scroll Reveal */
 .reveal-on-scroll {
   opacity: 0;
-  transform: translateY(28px);
+  transform: translateY(22px);
   transition: opacity var(--transition-slow), transform var(--transition-slow);
   will-change: opacity, transform;
 }
@@ -256,12 +326,11 @@ a {
 .delay-100 { transition-delay: 100ms; }
 .delay-200 { transition-delay: 200ms; }
 .delay-300 { transition-delay: 300ms; }
-.delay-400 { transition-delay: 400ms; }
 
 /* Botón Flotante: WhatsApp */
 .floating-whatsapp {
   position: fixed;
-  bottom: 2rem;
+  bottom: calc(2rem + env(safe-area-inset-bottom, 0px));
   right: 2rem;
   width: 3.875rem;
   height: 3.875rem;
@@ -274,11 +343,15 @@ a {
   box-shadow: 0 10px 28px rgba(37, 211, 102, 0.45);
   z-index: 999;
   transition: transform var(--transition-fast), box-shadow var(--transition-fast);
+  min-width: 44px;
+  min-height: 44px;
 }
 
-.floating-whatsapp:hover {
-  transform: scale(1.1) translateY(-2px);
-  box-shadow: 0 14px 36px rgba(37, 211, 102, 0.65);
+@media (hover: hover) {
+  .floating-whatsapp:hover {
+    transform: scale(1.08) translateY(-2px);
+    box-shadow: 0 14px 34px rgba(37, 211, 102, 0.65);
+  }
 }
 
 .floating-whatsapp svg {
@@ -291,7 +364,7 @@ a {
 /* Botón Flotante: Volver Arriba */
 .floating-back-to-top {
   position: fixed;
-  bottom: 6.5rem;
+  bottom: calc(6.5rem + env(safe-area-inset-bottom, 0px));
   right: 2.25rem;
   width: 3.25rem;
   height: 3.25rem;
@@ -309,6 +382,8 @@ a {
   transform: translateY(12px);
   transition: opacity var(--transition-fast), transform var(--transition-fast), visibility var(--transition-fast), background var(--transition-fast);
   cursor: pointer;
+  min-width: 44px;
+  min-height: 44px;
 }
 
 .floating-back-to-top.is-visible {
@@ -317,11 +392,13 @@ a {
   transform: translateY(0);
 }
 
-.floating-back-to-top:hover {
-  background: var(--accent-cyan);
-  color: #07101B;
-  border-color: var(--accent-cyan);
-  transform: translateY(-2px);
+@media (hover: hover) {
+  .floating-back-to-top:hover {
+    background: var(--accent-cyan);
+    color: #07101B;
+    border-color: var(--accent-cyan);
+    transform: translateY(-2px);
+  }
 }
 
 .floating-back-to-top svg {
@@ -330,18 +407,18 @@ a {
   stroke: currentColor;
 }
 
-/* Timeline Vertical Refinado */
+/* Timeline Vertical Compacto */
 .timeline-item {
   position: relative;
-  padding-left: 2.5rem;
+  padding-left: 2.25rem;
 }
 
 .timeline-item::before {
   content: '';
   position: absolute;
-  left: 0.5rem;
+  left: 0.45rem;
   top: 0.5rem;
-  bottom: -2rem;
+  bottom: -1.75rem;
   width: 2px;
   background: linear-gradient(to bottom, var(--accent-cyan), rgba(53, 198, 188, 0.15));
 }
@@ -354,22 +431,22 @@ a {
   position: absolute;
   left: 0;
   top: 0.35rem;
-  width: 1.125rem;
-  height: 1.125rem;
+  width: 1rem;
+  height: 1rem;
   border-radius: 50%;
   background: var(--bg-primary);
   border: 2px solid var(--accent-cyan);
-  box-shadow: 0 0 12px var(--accent-cyan);
+  box-shadow: 0 0 10px var(--accent-cyan);
 }
 
-/* Header Fijo con Blur Dinámico */
+/* Header Fijo */
 .site-header {
   position: sticky;
   top: 0;
   z-index: 100;
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
-  background: rgba(11, 18, 32, 0.85);
+  background: rgba(11, 18, 32, 0.88);
   border-bottom: 1px solid var(--border-subtle);
   transition: border-color var(--transition-fast), background var(--transition-fast);
 }
@@ -395,23 +472,26 @@ a {
 
 /* Responsividad Móvil */
 @media (max-width: 640px) {
+  .reveal-on-scroll {
+    transition-duration: 350ms;
+  }
+
   .floating-whatsapp {
-    bottom: 1.25rem;
+    bottom: calc(1.25rem + env(safe-area-inset-bottom, 0px));
     right: 1.25rem;
-    width: 3.25rem;
-    height: 3.25rem;
+    width: 3.35rem;
+    height: 3.35rem;
   }
   
   .floating-whatsapp svg {
-    width: 1.75rem;
-    height: 1.75rem;
+    width: 1.85rem;
+    height: 1.85rem;
   }
   
   .floating-back-to-top {
-    bottom: 5.25rem;
+    bottom: calc(5.25rem + env(safe-area-inset-bottom, 0px));
     right: 1.35rem;
     width: 2.85rem;
     height: 2.85rem;
   }
 }
-

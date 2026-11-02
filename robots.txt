@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://proyecto01-b4w.pages.dev/sitemap.xml
