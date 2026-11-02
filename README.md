@@ -52,7 +52,7 @@ Para actualizar el enlace de LinkedIn en todo el sitio web:
 1. Abre el archivo `js/config.js`.
 2. Modifica la constante `linkedinUrl`:
    ```javascript
-   linkedinUrl: 'https://www.linkedin.com/in/claudiocastillo-pmp'
+   linkedinUrl: 'https://www.linkedin.com/in/claudio-castillo-pmp'
    ```
 3. El cambio se reflejará automáticamente en todos los enlaces y botones de LinkedIn del sitio.
 
