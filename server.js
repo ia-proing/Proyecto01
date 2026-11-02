@@ -11,6 +11,7 @@ const MIME_TYPES = {
   '.png': 'image/png',
   '.jpg': 'image/jpeg',
   '.jpeg': 'image/jpeg',
+  '.webp': 'image/webp',
   '.json': 'application/json',
   '.ico': 'image/x-icon'
 };
